@@ -1,0 +1,33 @@
+# Data
+data/
+*.parquet
+*.csv
+!data/.gitkeep
+
+# Models
+models/
+*.pkl
+*.pt
+*.onnx
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+venv/
+.venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Secrets
+.env
+kaggle.json
+
+# OS
+.DS_Store
+Thumbs.db

@@ -9,6 +9,11 @@ Modern GPU clusters generate heat in bursts. Traditional cooling is *reactive*�
 1. **PUE Forecaster** – LSTM/XGBoost model predicting Power Usage Effectiveness 15 minutes ahead
 2. **Thermal Digital Twin** – 3D visualization of "Hot Alleys" in the data center floor
 3. **RL Control Agent** – PPO algorithm optimizing Chilled Water Setpoint (7–15°C)
+4. **Baseline Controller Comparison** – Static (10°C) vs Rule-based vs RL; energy, violations, PUE
+5. **Carbon Cost & ESG** – CO₂ avoided (kg/day), £ carbon tax avoided, Net-Zero 2026 positioning
+6. **Failure Mode Simulation** – Fan failure, chiller failure, IT load spike; RL vs rule-based recovery
+7. **Physics-Informed Constraints** – Max temp rate, cooling inertia, thermal mass
+8. **Executive Dashboard** – £ saved today/month, CO₂ avoided, controller toggle, failure simulation
 
 ## Quick Start
 
@@ -40,6 +45,12 @@ python scripts/train_rl_agent.py
 | Weather | Open-Meteo API | Synthetic humidity, dew point |
 
 **Kaggle:** Place `kaggle.json` in `~/.kaggle/` for Kaggle dataset downloads.
+
+## Controller Comparison
+
+```bash
+python scripts/run_comparison.py
+```
 
 ## Project Structure
 

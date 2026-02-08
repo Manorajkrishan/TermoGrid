@@ -2,6 +2,18 @@
 
 ## What We Have Developed So Far
 
+### Production-Ready Additions (v0.2)
+
+| Feature | Description |
+|--------|-------------|
+| **Baseline Comparison** | Static (10°C), Rule-based, RL controllers; PUE, violations, energy metrics |
+| **Carbon & ESG** | `carbon_cost = energy_kwh * grid_intensity * carbon_tax`; £ saved, CO₂ avoided |
+| **Failure Simulation** | Fan failure, chiller failure, IT load spike; recovery comparison |
+| **Physics Constraints** | Max temp rate (1.5°C/step), cooling inertia, thermal mass |
+| **Executive Dashboard** | £ saved today/month, CO₂ avoided, controller toggle, failure mode |
+
+---
+
 ### 1. **Data Pipeline** ✅
 
 | Dataset | Source | Status |
